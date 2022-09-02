@@ -22,6 +22,7 @@ void ShowArr(int[] arr)
             Console.Write($"{arr[i]} ]");
         else
             Console.Write($"{arr[i]}, ");
+    Console.WriteLine();
 }
 
 int FindNegSum(int[] arr)
@@ -33,4 +34,6 @@ int FindNegSum(int[] arr)
     return sum;
 }
 
-int[] arr;
+int[] arr = CreateRandomArray(10,-9,9);
+ShowArr(arr);
+Console.WriteLine($"Сумма отрицательных чисел равна {FindNegSum(arr)}");
